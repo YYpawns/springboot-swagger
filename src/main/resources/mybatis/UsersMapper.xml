@@ -20,4 +20,14 @@
             </if>
         </where>
     </select>
+
+    <select id="selectByAge" parameterType="com.yy.springbootswagger.request.UserAgeModel" resultType="com.yy.springbootswagger.entity.Users">
+        select <include refid="Base_Column_List"/>
+        FROM  user
+        <where>
+            <if test="age != null">
+                age = #{age}
+            </if>
+        </where>
+    </select>
 </mapper>

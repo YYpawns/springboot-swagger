@@ -1,7 +1,10 @@
 package com.yy.springbootswagger.service;
 
 import com.yy.springbootswagger.entity.Users;
+import com.yy.springbootswagger.request.UserAgeModel;
 import com.yy.springbootswagger.request.UserModel;
+
+import java.util.List;
 
 /**
  * @package: com.yy.springbootswagger.service
@@ -11,4 +14,6 @@ import com.yy.springbootswagger.request.UserModel;
  */
 public interface UserService {
     Users selectById(UserModel user);
+
+    List<Users> selectByAge(UserAgeModel user);
 }
