@@ -27,8 +27,6 @@ public class Swagger {
         return new ApiInfoBuilder()
                 .title("Springboot-Swagger")
                 .description("自定义springboot-swagger")
-                .license("Apache 2.0")
-                .licenseUrl("http://www.apache.org/licenses/LICENSE-2.0.html")
                 .termsOfServiceUrl("")
                 .version(VERSION)
                 .contact(new Contact("yy","", ""))
