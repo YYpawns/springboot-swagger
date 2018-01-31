@@ -1,6 +1,5 @@
 package com.yy.springbootswagger.controller;
 
-import com.alibaba.fastjson.JSONObject;
 import com.yy.springbootswagger.entity.Users;
 import com.yy.springbootswagger.request.UserAgeModel;
 import com.yy.springbootswagger.request.UserModel;
