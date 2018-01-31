@@ -31,7 +31,7 @@ public class Swagger {
                 .licenseUrl("http://www.apache.org/licenses/LICENSE-2.0.html")
                 .termsOfServiceUrl("")
                 .version(VERSION)
-                .contact(new Contact("","", "yy@outlook.com"))
+                .contact(new Contact("yy","", ""))
                 .build();
     }
 
