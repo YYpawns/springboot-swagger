@@ -3687,3 +3687,805 @@ java.sql.SQLException: The url cannot be null
 2018-01-31 15:03:31.046  INFO 7180 --- [http-nio-8089-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
 2018-01-31 15:03:31.047  INFO 7180 --- [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
 2018-01-31 15:03:31.071  INFO 7180 --- [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
+2018-02-01 14:07:37.478  INFO 4504 --- [main] c.y.s.SpringbootswaggerApplicationTests  : Starting SpringbootswaggerApplicationTests on QAWCIWYU25J6B9J with PID 4504 (started by Administrator in F:\springbootswagger)
+2018-02-01 14:07:37.479  INFO 4504 --- [main] c.y.s.SpringbootswaggerApplicationTests  : No active profile set, falling back to default profiles: default
+2018-02-01 14:07:37.522  INFO 4504 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7139992f: startup date [Thu Feb 01 14:07:37 CST 2018]; root of context hierarchy
+2018-02-01 14:07:38.640  INFO 4504 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-02-01 14:07:39.247  INFO 4504 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ef7e8778] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 14:07:40.087  INFO 4504 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/getUser],methods=[POST]}" onto public java.lang.Object com.yy.springbootswagger.controller.UserController.getUser(javax.servlet.http.HttpServletResponse,com.yy.springbootswagger.request.UserModel)
+2018-02-01 14:07:40.088  INFO 4504 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/getUserByAge],methods=[POST]}" onto public java.lang.Object com.yy.springbootswagger.controller.UserController.getUserByAge(javax.servlet.http.HttpServletResponse,com.yy.springbootswagger.request.UserAgeModel)
+2018-02-01 14:07:40.089  INFO 4504 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-02-01 14:07:40.091  INFO 4504 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-02-01 14:07:40.092  INFO 4504 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-02-01 14:07:40.092  INFO 4504 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-02-01 14:07:40.096  INFO 4504 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-01 14:07:40.096  INFO 4504 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-01 14:07:40.543  INFO 4504 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@7139992f: startup date [Thu Feb 01 14:07:37 CST 2018]; root of context hierarchy
+2018-02-01 14:07:40.585  INFO 4504 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-01 14:07:40.585  INFO 4504 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-01 14:07:40.615  INFO 4504 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-01 14:07:40.995  INFO 4504 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-02-01 14:07:40.996  INFO 4504 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-02-01 14:07:41.010  INFO 4504 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2018-02-01 14:07:41.021  INFO 4504 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-02-01 14:07:41.115  INFO 4504 --- [main] c.y.s.SpringbootswaggerApplicationTests  : Started SpringbootswaggerApplicationTests in 3.961 seconds (JVM running for 4.625)
+2018-02-01 14:07:41.159  INFO 4504 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@7139992f: startup date [Thu Feb 01 14:07:37 CST 2018]; root of context hierarchy
+2018-02-01 14:07:41.161  INFO 4504 --- [Thread-2] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2018-02-01 14:13:51.009  INFO 5844 --- [main] c.y.s.SpringbootswaggerApplication       : Starting SpringbootswaggerApplication on QAWCIWYU25J6B9J with PID 5844 (F:\springbootswagger\target\classes started by Administrator in F:\springbootswagger)
+2018-02-01 14:13:51.012  INFO 5844 --- [main] c.y.s.SpringbootswaggerApplication       : No active profile set, falling back to default profiles: default
+2018-02-01 14:13:51.145  INFO 5844 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7193666c: startup date [Thu Feb 01 14:13:51 CST 2018]; root of context hierarchy
+2018-02-01 14:13:51.920  INFO 5844 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-02-01 14:13:52.200  INFO 5844 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3aeefdc6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 14:13:52.469  INFO 5844 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8089 (http)
+2018-02-01 14:13:52.477  INFO 5844 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-02-01 14:13:52.477  INFO 5844 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-02-01 14:13:52.561  INFO 5844 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-02-01 14:13:52.561  INFO 5844 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1418 ms
+2018-02-01 14:13:52.704  INFO 5844 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-01 14:13:52.707  INFO 5844 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-01 14:13:52.707  INFO 5844 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-01 14:13:52.707  INFO 5844 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-01 14:13:52.708  INFO 5844 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-01 14:13:53.256  INFO 5844 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/getUser],methods=[POST]}" onto public java.lang.Object com.yy.springbootswagger.controller.UserController.getUser(javax.servlet.http.HttpServletResponse,com.yy.springbootswagger.request.UserModel)
+2018-02-01 14:13:53.257  INFO 5844 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/getUserByAge],methods=[POST]}" onto public java.lang.Object com.yy.springbootswagger.controller.UserController.getUserByAge(javax.servlet.http.HttpServletResponse,com.yy.springbootswagger.request.UserAgeModel)
+2018-02-01 14:13:53.257  INFO 5844 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-02-01 14:13:53.260  INFO 5844 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-02-01 14:13:53.260  INFO 5844 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-02-01 14:13:53.261  INFO 5844 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-02-01 14:13:53.263  INFO 5844 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-01 14:13:53.264  INFO 5844 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-01 14:13:53.505  INFO 5844 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7193666c: startup date [Thu Feb 01 14:13:51 CST 2018]; root of context hierarchy
+2018-02-01 14:13:53.556  INFO 5844 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-01 14:13:53.556  INFO 5844 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-01 14:13:53.597  INFO 5844 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-01 14:13:53.959  INFO 5844 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-02-01 14:13:53.965  INFO 5844 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-02-01 14:13:53.965  INFO 5844 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-02-01 14:13:53.975  INFO 5844 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2018-02-01 14:13:53.983  INFO 5844 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-02-01 14:13:54.183  INFO 5844 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8089 (http)
+2018-02-01 14:13:54.187  INFO 5844 --- [main] c.y.s.SpringbootswaggerApplication       : Started SpringbootswaggerApplication in 3.533 seconds (JVM running for 4.093)
+2018-02-01 14:14:00.757  INFO 5844 --- [http-nio-8089-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-02-01 14:14:00.757  INFO 5844 --- [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-02-01 14:14:00.780  INFO 5844 --- [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms
+2018-02-01 15:25:58.815  INFO 5300 --- [main] c.y.s.SpringbootswaggerApplication       : Starting SpringbootswaggerApplication on QAWCIWYU25J6B9J with PID 5300 (F:\springbootswagger\target\classes started by Administrator in F:\springbootswagger)
+2018-02-01 15:25:58.817  INFO 5300 --- [main] c.y.s.SpringbootswaggerApplication       : No active profile set, falling back to default profiles: default
+2018-02-01 15:25:58.900  INFO 5300 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@15ff3e9e: startup date [Thu Feb 01 15:25:58 CST 2018]; root of context hierarchy
+2018-02-01 15:25:59.920  INFO 5300 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-02-01 15:26:00.138  INFO 5300 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$63ef4414] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 15:26:00.404  INFO 5300 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8089 (http)
+2018-02-01 15:26:00.414  INFO 5300 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-02-01 15:26:00.415  INFO 5300 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-02-01 15:26:00.501  INFO 5300 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-02-01 15:26:00.502  INFO 5300 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1604 ms
+2018-02-01 15:26:00.654  INFO 5300 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-01 15:26:00.660  INFO 5300 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-01 15:26:00.661  INFO 5300 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-01 15:26:00.661  INFO 5300 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-01 15:26:00.661  INFO 5300 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-01 15:26:01.197  INFO 5300 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/addUser],methods=[POST]}" onto public java.lang.Object com.yy.springbootswagger.controller.UserController.addUser(javax.servlet.http.HttpServletResponse,com.yy.springbootswagger.entity.Users)
+2018-02-01 15:26:01.197  INFO 5300 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/getUser],methods=[POST]}" onto public java.lang.Object com.yy.springbootswagger.controller.UserController.getUser(javax.servlet.http.HttpServletResponse,com.yy.springbootswagger.request.UserModel)
+2018-02-01 15:26:01.198  INFO 5300 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/getUserByAge],methods=[POST]}" onto public java.lang.Object com.yy.springbootswagger.controller.UserController.getUserByAge(javax.servlet.http.HttpServletResponse,com.yy.springbootswagger.request.UserAgeModel)
+2018-02-01 15:26:01.198  INFO 5300 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-02-01 15:26:01.201  INFO 5300 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-02-01 15:26:01.202  INFO 5300 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-02-01 15:26:01.203  INFO 5300 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-02-01 15:26:01.205  INFO 5300 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-01 15:26:01.206  INFO 5300 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-01 15:26:01.432  INFO 5300 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@15ff3e9e: startup date [Thu Feb 01 15:25:58 CST 2018]; root of context hierarchy
+2018-02-01 15:26:01.468  INFO 5300 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-01 15:26:01.468  INFO 5300 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-01 15:26:01.496  INFO 5300 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-01 15:26:01.752  INFO 5300 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-02-01 15:26:01.757  INFO 5300 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-02-01 15:26:01.757  INFO 5300 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-02-01 15:26:01.768  INFO 5300 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2018-02-01 15:26:01.778  INFO 5300 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-02-01 15:26:01.969  INFO 5300 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8089 (http)
+2018-02-01 15:26:01.972  INFO 5300 --- [main] c.y.s.SpringbootswaggerApplication       : Started SpringbootswaggerApplication in 3.405 seconds (JVM running for 3.893)
+2018-02-01 15:26:18.406  INFO 5300 --- [http-nio-8089-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-02-01 15:26:18.406  INFO 5300 --- [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-02-01 15:26:18.423  INFO 5300 --- [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2018-02-01 15:28:20.829  INFO 7200 --- [main] c.y.s.SpringbootswaggerApplication       : Starting SpringbootswaggerApplication on QAWCIWYU25J6B9J with PID 7200 (F:\springbootswagger\target\classes started by Administrator in F:\springbootswagger)
+2018-02-01 15:28:20.831  INFO 7200 --- [main] c.y.s.SpringbootswaggerApplication       : No active profile set, falling back to default profiles: default
+2018-02-01 15:28:20.868  INFO 7200 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7fa98a66: startup date [Thu Feb 01 15:28:20 CST 2018]; root of context hierarchy
+2018-02-01 15:28:21.613  INFO 7200 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-02-01 15:28:21.829  INFO 7200 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1ad6ecb7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 15:28:22.083  INFO 7200 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8089 (http)
+2018-02-01 15:28:22.090  INFO 7200 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-02-01 15:28:22.091  INFO 7200 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-02-01 15:28:22.170  INFO 7200 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-02-01 15:28:22.170  INFO 7200 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1306 ms
+2018-02-01 15:28:22.297  INFO 7200 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-01 15:28:22.300  INFO 7200 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-01 15:28:22.301  INFO 7200 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-01 15:28:22.301  INFO 7200 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-01 15:28:22.301  INFO 7200 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-01 15:28:22.828  INFO 7200 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/addUser],methods=[POST]}" onto public java.lang.Object com.yy.springbootswagger.controller.UserController.addUser(javax.servlet.http.HttpServletResponse,com.yy.springbootswagger.entity.Users)
+2018-02-01 15:28:22.829  INFO 7200 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/getUser],methods=[POST]}" onto public java.lang.Object com.yy.springbootswagger.controller.UserController.getUser(javax.servlet.http.HttpServletResponse,com.yy.springbootswagger.request.UserModel)
+2018-02-01 15:28:22.829  INFO 7200 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/getUserByAge],methods=[POST]}" onto public java.lang.Object com.yy.springbootswagger.controller.UserController.getUserByAge(javax.servlet.http.HttpServletResponse,com.yy.springbootswagger.request.UserAgeModel)
+2018-02-01 15:28:22.829  INFO 7200 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-02-01 15:28:22.832  INFO 7200 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-02-01 15:28:22.832  INFO 7200 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-02-01 15:28:22.833  INFO 7200 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-02-01 15:28:22.836  INFO 7200 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-01 15:28:22.836  INFO 7200 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-01 15:28:23.055  INFO 7200 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7fa98a66: startup date [Thu Feb 01 15:28:20 CST 2018]; root of context hierarchy
+2018-02-01 15:28:23.097  INFO 7200 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-01 15:28:23.097  INFO 7200 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-01 15:28:23.124  INFO 7200 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-01 15:28:23.375  INFO 7200 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-02-01 15:28:23.381  INFO 7200 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-02-01 15:28:23.381  INFO 7200 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-02-01 15:28:23.391  INFO 7200 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2018-02-01 15:28:23.399  INFO 7200 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-02-01 15:28:23.579  INFO 7200 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8089 (http)
+2018-02-01 15:28:23.584  INFO 7200 --- [main] c.y.s.SpringbootswaggerApplication       : Started SpringbootswaggerApplication in 2.999 seconds (JVM running for 3.485)
+2018-02-01 15:28:32.233  INFO 7200 --- [http-nio-8089-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-02-01 15:28:32.233  INFO 7200 --- [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-02-01 15:28:32.251  INFO 7200 --- [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+2018-02-01 15:28:44.223  INFO 7200 --- [http-nio-8089-exec-3] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2018-02-01 15:28:44.250  INFO 7200 --- [http-nio-8089-exec-3] o.s.jdbc.support.SQLErrorCodesFactory    : SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+2018-02-01 15:30:37.959  INFO 5484 --- [main] c.y.s.SpringbootswaggerApplication       : Starting SpringbootswaggerApplication on QAWCIWYU25J6B9J with PID 5484 (F:\springbootswagger\target\classes started by Administrator in F:\springbootswagger)
+2018-02-01 15:30:37.965  INFO 5484 --- [main] c.y.s.SpringbootswaggerApplication       : No active profile set, falling back to default profiles: default
+2018-02-01 15:30:38.026  INFO 5484 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7fa98a66: startup date [Thu Feb 01 15:30:38 CST 2018]; root of context hierarchy
+2018-02-01 15:30:38.714  INFO 5484 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-02-01 15:30:38.928  INFO 5484 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1ad6ecb7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 15:30:39.180  INFO 5484 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8089 (http)
+2018-02-01 15:30:39.188  INFO 5484 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-02-01 15:30:39.188  INFO 5484 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-02-01 15:30:39.266  INFO 5484 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-02-01 15:30:39.266  INFO 5484 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1243 ms
+2018-02-01 15:30:39.388  INFO 5484 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-01 15:30:39.393  INFO 5484 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-01 15:30:39.393  INFO 5484 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-01 15:30:39.393  INFO 5484 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-01 15:30:39.393  INFO 5484 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-01 15:30:39.914  INFO 5484 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/addUser],methods=[POST]}" onto public java.lang.Object com.yy.springbootswagger.controller.UserController.addUser(javax.servlet.http.HttpServletResponse,com.yy.springbootswagger.entity.Users)
+2018-02-01 15:30:39.915  INFO 5484 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/getUserByAge],methods=[POST]}" onto public java.lang.Object com.yy.springbootswagger.controller.UserController.getUserByAge(javax.servlet.http.HttpServletResponse,com.yy.springbootswagger.request.UserAgeModel)
+2018-02-01 15:30:39.915  INFO 5484 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/getUser],methods=[POST]}" onto public java.lang.Object com.yy.springbootswagger.controller.UserController.getUser(javax.servlet.http.HttpServletResponse,com.yy.springbootswagger.request.UserModel)
+2018-02-01 15:30:39.915  INFO 5484 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-02-01 15:30:39.918  INFO 5484 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-02-01 15:30:39.918  INFO 5484 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-02-01 15:30:39.919  INFO 5484 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-02-01 15:30:39.921  INFO 5484 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-01 15:30:39.921  INFO 5484 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-01 15:30:40.135  INFO 5484 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7fa98a66: startup date [Thu Feb 01 15:30:38 CST 2018]; root of context hierarchy
+2018-02-01 15:30:40.173  INFO 5484 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-01 15:30:40.174  INFO 5484 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-01 15:30:40.206  INFO 5484 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-01 15:30:40.483  INFO 5484 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-02-01 15:30:40.489  INFO 5484 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-02-01 15:30:40.489  INFO 5484 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-02-01 15:30:40.499  INFO 5484 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2018-02-01 15:30:40.507  INFO 5484 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-02-01 15:30:40.703  INFO 5484 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8089 (http)
+2018-02-01 15:30:40.707  INFO 5484 --- [main] c.y.s.SpringbootswaggerApplication       : Started SpringbootswaggerApplication in 3.03 seconds (JVM running for 3.501)
+2018-02-01 15:30:49.199  INFO 5484 --- [http-nio-8089-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-02-01 15:30:49.200  INFO 5484 --- [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-02-01 15:30:49.217  INFO 5484 --- [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2018-02-01 15:40:35.458  INFO 6800 --- [main] c.y.s.SpringbootswaggerApplication       : Starting SpringbootswaggerApplication on QAWCIWYU25J6B9J with PID 6800 (F:\springbootswagger\target\classes started by Administrator in F:\springbootswagger)
+2018-02-01 15:40:35.460  INFO 6800 --- [main] c.y.s.SpringbootswaggerApplication       : No active profile set, falling back to default profiles: default
+2018-02-01 15:40:35.542  INFO 6800 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@15ff3e9e: startup date [Thu Feb 01 15:40:35 CST 2018]; root of context hierarchy
+2018-02-01 15:40:36.433  INFO 6800 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-02-01 15:40:36.665  INFO 6800 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fb1382d9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 15:40:37.031  INFO 6800 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8089 (http)
+2018-02-01 15:40:37.042  INFO 6800 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-02-01 15:40:37.043  INFO 6800 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-02-01 15:40:37.134  INFO 6800 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-02-01 15:40:37.134  INFO 6800 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1594 ms
+2018-02-01 15:40:37.282  INFO 6800 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-01 15:40:37.285  INFO 6800 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-01 15:40:37.286  INFO 6800 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-01 15:40:37.286  INFO 6800 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-01 15:40:37.286  INFO 6800 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-01 15:40:37.875  INFO 6800 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/changeUser],methods=[POST]}" onto public java.lang.Object com.yy.springbootswagger.controller.UserController.cahngeUser(javax.servlet.http.HttpServletResponse,com.yy.springbootswagger.entity.Users)
+2018-02-01 15:40:37.875  INFO 6800 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/getUser],methods=[POST]}" onto public java.lang.Object com.yy.springbootswagger.controller.UserController.getUser(javax.servlet.http.HttpServletResponse,com.yy.springbootswagger.request.UserModel)
+2018-02-01 15:40:37.876  INFO 6800 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/getUserByAge],methods=[POST]}" onto public java.lang.Object com.yy.springbootswagger.controller.UserController.getUserByAge(javax.servlet.http.HttpServletResponse,com.yy.springbootswagger.request.UserAgeModel)
+2018-02-01 15:40:37.876  INFO 6800 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/addUser],methods=[POST]}" onto public java.lang.Object com.yy.springbootswagger.controller.UserController.addUser(javax.servlet.http.HttpServletResponse,com.yy.springbootswagger.entity.Users)
+2018-02-01 15:40:37.876  INFO 6800 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-02-01 15:40:37.879  INFO 6800 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-02-01 15:40:37.880  INFO 6800 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-02-01 15:40:37.880  INFO 6800 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-02-01 15:40:37.883  INFO 6800 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-01 15:40:37.884  INFO 6800 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-01 15:40:38.131  INFO 6800 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@15ff3e9e: startup date [Thu Feb 01 15:40:35 CST 2018]; root of context hierarchy
+2018-02-01 15:40:38.172  INFO 6800 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-01 15:40:38.172  INFO 6800 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-01 15:40:38.205  INFO 6800 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-01 15:40:38.513  INFO 6800 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-02-01 15:40:38.519  INFO 6800 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-02-01 15:40:38.519  INFO 6800 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-02-01 15:40:38.529  INFO 6800 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2018-02-01 15:40:38.538  INFO 6800 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-02-01 15:40:38.755  INFO 6800 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8089 (http)
+2018-02-01 15:40:38.760  INFO 6800 --- [main] c.y.s.SpringbootswaggerApplication       : Started SpringbootswaggerApplication in 3.59 seconds (JVM running for 4.154)
+2018-02-01 15:40:44.114  INFO 6800 --- [http-nio-8089-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-02-01 15:40:44.115  INFO 6800 --- [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-02-01 15:40:44.134  INFO 6800 --- [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+2018-02-01 15:41:00.987  INFO 6800 --- [http-nio-8089-exec-1] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2018-02-01 15:41:01.013  INFO 6800 --- [http-nio-8089-exec-1] o.s.jdbc.support.SQLErrorCodesFactory    : SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+2018-02-01 15:44:42.722  INFO 7188 --- [main] c.y.s.SpringbootswaggerApplication       : Starting SpringbootswaggerApplication on QAWCIWYU25J6B9J with PID 7188 (F:\springbootswagger\target\classes started by Administrator in F:\springbootswagger)
+2018-02-01 15:44:42.724  INFO 7188 --- [main] c.y.s.SpringbootswaggerApplication       : No active profile set, falling back to default profiles: default
+2018-02-01 15:44:42.759  INFO 7188 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7fa98a66: startup date [Thu Feb 01 15:44:42 CST 2018]; root of context hierarchy
+2018-02-01 15:44:43.369  INFO 7188 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-02-01 15:44:43.591  INFO 7188 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6994fa37] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 15:44:43.844  INFO 7188 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8089 (http)
+2018-02-01 15:44:43.851  INFO 7188 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-02-01 15:44:43.852  INFO 7188 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-02-01 15:44:43.930  INFO 7188 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-02-01 15:44:43.930  INFO 7188 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1173 ms
+2018-02-01 15:44:44.054  INFO 7188 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-01 15:44:44.058  INFO 7188 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-01 15:44:44.058  INFO 7188 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-01 15:44:44.058  INFO 7188 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-01 15:44:44.058  INFO 7188 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-01 15:44:44.601  INFO 7188 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/addUser],methods=[POST]}" onto public java.lang.Object com.yy.springbootswagger.controller.UserController.addUser(javax.servlet.http.HttpServletResponse,com.yy.springbootswagger.entity.Users)
+2018-02-01 15:44:44.602  INFO 7188 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/changeUser],methods=[POST]}" onto public java.lang.Object com.yy.springbootswagger.controller.UserController.cahngeUser(javax.servlet.http.HttpServletResponse,com.yy.springbootswagger.entity.Users)
+2018-02-01 15:44:44.602  INFO 7188 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/getUser],methods=[POST]}" onto public java.lang.Object com.yy.springbootswagger.controller.UserController.getUser(javax.servlet.http.HttpServletResponse,com.yy.springbootswagger.request.UserModel)
+2018-02-01 15:44:44.602  INFO 7188 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/getUserByAge],methods=[POST]}" onto public java.lang.Object com.yy.springbootswagger.controller.UserController.getUserByAge(javax.servlet.http.HttpServletResponse,com.yy.springbootswagger.request.UserAgeModel)
+2018-02-01 15:44:44.603  INFO 7188 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-02-01 15:44:44.605  INFO 7188 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-02-01 15:44:44.606  INFO 7188 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-02-01 15:44:44.606  INFO 7188 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-02-01 15:44:44.608  INFO 7188 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-01 15:44:44.609  INFO 7188 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-01 15:44:44.833  INFO 7188 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7fa98a66: startup date [Thu Feb 01 15:44:42 CST 2018]; root of context hierarchy
+2018-02-01 15:44:44.871  INFO 7188 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-01 15:44:44.871  INFO 7188 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-01 15:44:44.903  INFO 7188 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-01 15:44:45.174  INFO 7188 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-02-01 15:44:45.180  INFO 7188 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-02-01 15:44:45.180  INFO 7188 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-02-01 15:44:45.190  INFO 7188 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2018-02-01 15:44:45.198  INFO 7188 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-02-01 15:44:45.409  INFO 7188 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8089 (http)
+2018-02-01 15:44:45.413  INFO 7188 --- [main] c.y.s.SpringbootswaggerApplication       : Started SpringbootswaggerApplication in 3.048 seconds (JVM running for 3.586)
+2018-02-01 15:44:49.713  INFO 7188 --- [http-nio-8089-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-02-01 15:44:49.713  INFO 7188 --- [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-02-01 15:44:49.732  INFO 7188 --- [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+2018-02-01 15:44:54.742  INFO 7188 --- [http-nio-8089-exec-8] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2018-02-01 15:44:54.769  INFO 7188 --- [http-nio-8089-exec-8] o.s.jdbc.support.SQLErrorCodesFactory    : SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+2018-02-01 15:48:12.058  INFO 6252 --- [main] c.y.s.SpringbootswaggerApplication       : Starting SpringbootswaggerApplication on QAWCIWYU25J6B9J with PID 6252 (F:\springbootswagger\target\classes started by Administrator in F:\springbootswagger)
+2018-02-01 15:48:12.070  INFO 6252 --- [main] c.y.s.SpringbootswaggerApplication       : No active profile set, falling back to default profiles: default
+2018-02-01 15:48:12.125  INFO 6252 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@15ff3e9e: startup date [Thu Feb 01 15:48:12 CST 2018]; root of context hierarchy
+2018-02-01 15:48:12.896  INFO 6252 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-02-01 15:48:13.116  INFO 6252 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$edc6e4ff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 15:48:13.376  INFO 6252 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8089 (http)
+2018-02-01 15:48:13.383  INFO 6252 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-02-01 15:48:13.384  INFO 6252 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-02-01 15:48:13.464  INFO 6252 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-02-01 15:48:13.464  INFO 6252 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1341 ms
+2018-02-01 15:48:13.596  INFO 6252 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-01 15:48:13.600  INFO 6252 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-01 15:48:13.601  INFO 6252 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-01 15:48:13.601  INFO 6252 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-01 15:48:13.601  INFO 6252 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-01 15:48:14.131  INFO 6252 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/addUser],methods=[POST]}" onto public java.lang.Object com.yy.springbootswagger.controller.UserController.addUser(javax.servlet.http.HttpServletResponse,com.yy.springbootswagger.entity.Users)
+2018-02-01 15:48:14.132  INFO 6252 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/changeUser],methods=[POST]}" onto public java.lang.Object com.yy.springbootswagger.controller.UserController.cahngeUser(javax.servlet.http.HttpServletResponse,com.yy.springbootswagger.entity.Users)
+2018-02-01 15:48:14.132  INFO 6252 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/getUser],methods=[POST]}" onto public java.lang.Object com.yy.springbootswagger.controller.UserController.getUser(javax.servlet.http.HttpServletResponse,com.yy.springbootswagger.request.UserModel)
+2018-02-01 15:48:14.132  INFO 6252 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/getUserByAge],methods=[POST]}" onto public java.lang.Object com.yy.springbootswagger.controller.UserController.getUserByAge(javax.servlet.http.HttpServletResponse,com.yy.springbootswagger.request.UserAgeModel)
+2018-02-01 15:48:14.133  INFO 6252 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-02-01 15:48:14.136  INFO 6252 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-02-01 15:48:14.137  INFO 6252 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-02-01 15:48:14.137  INFO 6252 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-02-01 15:48:14.140  INFO 6252 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-01 15:48:14.140  INFO 6252 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-01 15:48:14.356  INFO 6252 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@15ff3e9e: startup date [Thu Feb 01 15:48:12 CST 2018]; root of context hierarchy
+2018-02-01 15:48:14.395  INFO 6252 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-01 15:48:14.395  INFO 6252 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-01 15:48:14.423  INFO 6252 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-01 15:48:14.702  INFO 6252 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-02-01 15:48:14.707  INFO 6252 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-02-01 15:48:14.707  INFO 6252 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-02-01 15:48:14.717  INFO 6252 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2018-02-01 15:48:14.726  INFO 6252 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-02-01 15:48:14.937  INFO 6252 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8089 (http)
+2018-02-01 15:48:14.940  INFO 6252 --- [main] c.y.s.SpringbootswaggerApplication       : Started SpringbootswaggerApplication in 3.155 seconds (JVM running for 3.862)
+2018-02-01 15:48:30.609  INFO 6252 --- [http-nio-8089-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-02-01 15:48:30.609  INFO 6252 --- [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-02-01 15:48:30.632  INFO 6252 --- [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 23 ms
+2018-02-01 16:13:21.705  INFO 6900 --- [main] c.y.s.SpringbootswaggerApplication       : Starting SpringbootswaggerApplication on QAWCIWYU25J6B9J with PID 6900 (F:\springbootswagger\target\classes started by Administrator in F:\springbootswagger)
+2018-02-01 16:13:21.707  INFO 6900 --- [main] c.y.s.SpringbootswaggerApplication       : No active profile set, falling back to default profiles: default
+2018-02-01 16:13:21.770  INFO 6900 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5fdcaa40: startup date [Thu Feb 01 16:13:21 CST 2018]; root of context hierarchy
+2018-02-01 16:13:22.358  INFO 6900 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-02-01 16:13:22.567  INFO 6900 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7361b390] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 16:13:22.818  INFO 6900 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8089 (http)
+2018-02-01 16:13:22.824  INFO 6900 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-02-01 16:13:22.825  INFO 6900 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-02-01 16:13:22.901  INFO 6900 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-02-01 16:13:22.901  INFO 6900 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1134 ms
+2018-02-01 16:13:23.024  INFO 6900 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-01 16:13:23.028  INFO 6900 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-01 16:13:23.028  INFO 6900 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-01 16:13:23.029  INFO 6900 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-01 16:13:23.029  INFO 6900 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-01 16:13:23.550  INFO 6900 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/addUser],methods=[POST]}" onto public java.lang.Object com.yy.springbootswagger.controller.UserController.addUser(javax.servlet.http.HttpServletResponse,com.yy.springbootswagger.entity.Users)
+2018-02-01 16:13:23.551  INFO 6900 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/getUser],methods=[POST]}" onto public java.lang.Object com.yy.springbootswagger.controller.UserController.getUser(javax.servlet.http.HttpServletResponse,com.yy.springbootswagger.request.UserModel)
+2018-02-01 16:13:23.551  INFO 6900 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginUser],methods=[POST]}" onto public java.lang.Object com.yy.springbootswagger.controller.UserController.loginUser(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,com.yy.springbootswagger.request.LoginModel)
+2018-02-01 16:13:23.551  INFO 6900 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/changeUser],methods=[POST]}" onto public java.lang.Object com.yy.springbootswagger.controller.UserController.cahngeUser(javax.servlet.http.HttpServletResponse,com.yy.springbootswagger.entity.Users)
+2018-02-01 16:13:23.551  INFO 6900 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/getUserByAge],methods=[POST]}" onto public java.lang.Object com.yy.springbootswagger.controller.UserController.getUserByAge(javax.servlet.http.HttpServletResponse,com.yy.springbootswagger.request.UserAgeModel)
+2018-02-01 16:13:23.552  INFO 6900 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-02-01 16:13:23.554  INFO 6900 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-02-01 16:13:23.555  INFO 6900 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-02-01 16:13:23.556  INFO 6900 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-02-01 16:13:23.558  INFO 6900 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-01 16:13:23.558  INFO 6900 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-01 16:13:23.775  INFO 6900 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5fdcaa40: startup date [Thu Feb 01 16:13:21 CST 2018]; root of context hierarchy
+2018-02-01 16:13:23.811  INFO 6900 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-01 16:13:23.811  INFO 6900 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-01 16:13:23.840  INFO 6900 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-01 16:13:24.089  INFO 6900 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-02-01 16:13:24.096  INFO 6900 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-02-01 16:13:24.096  INFO 6900 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-02-01 16:13:24.107  INFO 6900 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2018-02-01 16:13:24.115  INFO 6900 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-02-01 16:13:24.302  INFO 6900 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8089 (http)
+2018-02-01 16:13:24.306  INFO 6900 --- [main] c.y.s.SpringbootswaggerApplication       : Started SpringbootswaggerApplication in 3.051 seconds (JVM running for 3.534)
+2018-02-01 16:13:31.939  INFO 6900 --- [http-nio-8089-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-02-01 16:13:31.939  INFO 6900 --- [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-02-01 16:13:31.959  INFO 6900 --- [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+2018-02-01 16:13:41.778 ERROR 6900 --- [http-nio-8089-exec-7] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.yy.springbootswagger.exception.MyException: 登录失败] with root cause
+
+com.yy.springbootswagger.exception.MyException: 登录失败
+	at com.yy.springbootswagger.controller.UserController.loginUser(UserController.java:50) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_31]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_31]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_31]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0_31]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_31]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_31]
+
+2018-02-01 16:32:02.592  INFO 5840 --- [main] c.y.s.SpringbootswaggerApplication       : Starting SpringbootswaggerApplication on QAWCIWYU25J6B9J with PID 5840 (F:\springbootswagger\target\classes started by Administrator in F:\springbootswagger)
+2018-02-01 16:32:02.594  INFO 5840 --- [main] c.y.s.SpringbootswaggerApplication       : No active profile set, falling back to default profiles: default
+2018-02-01 16:32:02.648  INFO 5840 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@15ff3e9e: startup date [Thu Feb 01 16:32:02 CST 2018]; root of context hierarchy
+2018-02-01 16:32:03.334  INFO 5840 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-02-01 16:32:03.554  INFO 5840 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$12e29a86] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 16:32:03.820  INFO 5840 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8089 (http)
+2018-02-01 16:32:03.828  INFO 5840 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-02-01 16:32:03.828  INFO 5840 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-02-01 16:32:03.905  INFO 5840 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-02-01 16:32:03.905  INFO 5840 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1260 ms
+2018-02-01 16:32:04.031  INFO 5840 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-01 16:32:04.034  INFO 5840 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-01 16:32:04.034  INFO 5840 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-01 16:32:04.034  INFO 5840 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-01 16:32:04.034  INFO 5840 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-01 16:32:04.576  INFO 5840 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/addUser],methods=[POST]}" onto public java.lang.Object com.yy.springbootswagger.controller.UserController.addUser(javax.servlet.http.HttpServletResponse,com.yy.springbootswagger.entity.Users)
+2018-02-01 16:32:04.577  INFO 5840 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/getUser],methods=[POST]}" onto public java.lang.Object com.yy.springbootswagger.controller.UserController.getUser(javax.servlet.http.HttpServletResponse,com.yy.springbootswagger.request.UserModel)
+2018-02-01 16:32:04.577  INFO 5840 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/getUserByAge],methods=[POST]}" onto public java.lang.Object com.yy.springbootswagger.controller.UserController.getUserByAge(javax.servlet.http.HttpServletResponse,com.yy.springbootswagger.request.UserAgeModel)
+2018-02-01 16:32:04.577  INFO 5840 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/checkLoginUser],methods=[POST]}" onto public java.lang.Object com.yy.springbootswagger.controller.UserController.checkLoginUser(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,com.yy.springbootswagger.request.LoginModel)
+2018-02-01 16:32:04.578  INFO 5840 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginUser],methods=[POST]}" onto public java.lang.Object com.yy.springbootswagger.controller.UserController.loginUser(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,com.yy.springbootswagger.request.LoginModel)
+2018-02-01 16:32:04.578  INFO 5840 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/changeUser],methods=[POST]}" onto public java.lang.Object com.yy.springbootswagger.controller.UserController.cahngeUser(javax.servlet.http.HttpServletResponse,com.yy.springbootswagger.entity.Users)
+2018-02-01 16:32:04.579  INFO 5840 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-02-01 16:32:04.581  INFO 5840 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-02-01 16:32:04.582  INFO 5840 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-02-01 16:32:04.582  INFO 5840 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-02-01 16:32:04.585  INFO 5840 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-01 16:32:04.585  INFO 5840 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-01 16:32:04.811  INFO 5840 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@15ff3e9e: startup date [Thu Feb 01 16:32:02 CST 2018]; root of context hierarchy
+2018-02-01 16:32:04.852  INFO 5840 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-01 16:32:04.853  INFO 5840 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-01 16:32:04.882  INFO 5840 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-01 16:32:05.145  INFO 5840 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-02-01 16:32:05.151  INFO 5840 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-02-01 16:32:05.151  INFO 5840 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-02-01 16:32:05.161  INFO 5840 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2018-02-01 16:32:05.169  INFO 5840 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-02-01 16:32:05.377  INFO 5840 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8089 (http)
+2018-02-01 16:32:05.381  INFO 5840 --- [main] c.y.s.SpringbootswaggerApplication       : Started SpringbootswaggerApplication in 3.079 seconds (JVM running for 3.534)
+2018-02-01 16:32:17.726  INFO 5840 --- [http-nio-8089-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-02-01 16:32:17.726  INFO 5840 --- [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-02-01 16:32:17.746  INFO 5840 --- [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+2018-02-01 16:32:25.950 ERROR 5840 --- [http-nio-8089-exec-7] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.yy.springbootswagger.exception.MyException: 登录失败] with root cause
+
+com.yy.springbootswagger.exception.MyException: 登录失败
+	at com.yy.springbootswagger.controller.UserController.loginUser(UserController.java:51) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_31]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_31]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_31]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0_31]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_31]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_31]
+
+2018-02-01 16:32:50.307 ERROR 5840 --- [http-nio-8089-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.yy.springbootswagger.exception.MyException: 登录失败] with root cause
+
+com.yy.springbootswagger.exception.MyException: 登录失败
+	at com.yy.springbootswagger.controller.UserController.checkLoginUser(UserController.java:75) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_31]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_31]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_31]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0_31]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_31]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_31]
+
+2018-02-01 16:43:02.715  INFO 7732 --- [main] c.y.s.SpringbootswaggerApplication       : Starting SpringbootswaggerApplication on QAWCIWYU25J6B9J with PID 7732 (F:\springbootswagger\target\classes started by Administrator in F:\springbootswagger)
+2018-02-01 16:43:02.717  INFO 7732 --- [main] c.y.s.SpringbootswaggerApplication       : No active profile set, falling back to default profiles: default
+2018-02-01 16:43:02.767  INFO 7732 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7fa98a66: startup date [Thu Feb 01 16:43:02 CST 2018]; root of context hierarchy
+2018-02-01 16:43:03.590  INFO 7732 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-02-01 16:43:03.805  INFO 7732 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9fdb99c4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 16:43:04.086  INFO 7732 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8089 (http)
+2018-02-01 16:43:04.093  INFO 7732 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-02-01 16:43:04.094  INFO 7732 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-02-01 16:43:04.174  INFO 7732 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-02-01 16:43:04.175  INFO 7732 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1411 ms
+2018-02-01 16:43:04.309  INFO 7732 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-01 16:43:04.314  INFO 7732 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-01 16:43:04.314  INFO 7732 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-01 16:43:04.314  INFO 7732 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-01 16:43:04.314  INFO 7732 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-01 16:43:04.865  INFO 7732 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/addUser],methods=[POST]}" onto public java.lang.Object com.yy.springbootswagger.controller.UserController.addUser(javax.servlet.http.HttpServletResponse,com.yy.springbootswagger.entity.Users)
+2018-02-01 16:43:04.866  INFO 7732 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/checkLoginUser],methods=[POST]}" onto public java.lang.Object com.yy.springbootswagger.controller.UserController.checkLoginUser(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,com.yy.springbootswagger.request.LoginModel)
+2018-02-01 16:43:04.866  INFO 7732 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginUser],methods=[POST]}" onto public java.lang.Object com.yy.springbootswagger.controller.UserController.loginUser(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,com.yy.springbootswagger.request.LoginModel)
+2018-02-01 16:43:04.866  INFO 7732 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/getUserByAge],methods=[POST]}" onto public java.lang.Object com.yy.springbootswagger.controller.UserController.getUserByAge(javax.servlet.http.HttpServletResponse,com.yy.springbootswagger.request.UserAgeModel)
+2018-02-01 16:43:04.866  INFO 7732 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/getUser],methods=[POST]}" onto public java.lang.Object com.yy.springbootswagger.controller.UserController.getUser(javax.servlet.http.HttpServletResponse,com.yy.springbootswagger.request.UserModel)
+2018-02-01 16:43:04.867  INFO 7732 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/changeUser],methods=[POST]}" onto public java.lang.Object com.yy.springbootswagger.controller.UserController.cahngeUser(javax.servlet.http.HttpServletResponse,com.yy.springbootswagger.entity.Users)
+2018-02-01 16:43:04.867  INFO 7732 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-02-01 16:43:04.870  INFO 7732 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-02-01 16:43:04.871  INFO 7732 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-02-01 16:43:04.871  INFO 7732 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-02-01 16:43:04.874  INFO 7732 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-01 16:43:04.874  INFO 7732 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-01 16:43:05.111  INFO 7732 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7fa98a66: startup date [Thu Feb 01 16:43:02 CST 2018]; root of context hierarchy
+2018-02-01 16:43:05.156  INFO 7732 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-01 16:43:05.156  INFO 7732 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-01 16:43:05.187  INFO 7732 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-01 16:43:05.483  INFO 7732 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-02-01 16:43:05.489  INFO 7732 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-02-01 16:43:05.489  INFO 7732 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-02-01 16:43:05.500  INFO 7732 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2018-02-01 16:43:05.510  INFO 7732 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-02-01 16:43:05.733  INFO 7732 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8089 (http)
+2018-02-01 16:43:05.737  INFO 7732 --- [main] c.y.s.SpringbootswaggerApplication       : Started SpringbootswaggerApplication in 3.302 seconds (JVM running for 3.853)
+2018-02-01 16:43:13.616  INFO 7732 --- [http-nio-8089-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-02-01 16:43:13.616  INFO 7732 --- [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-02-01 16:43:13.635  INFO 7732 --- [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+2018-02-01 16:46:33.553  INFO 8988 --- [main] c.y.s.SpringbootswaggerApplication       : Starting SpringbootswaggerApplication on QAWCIWYU25J6B9J with PID 8988 (F:\springbootswagger\target\classes started by Administrator in F:\springbootswagger)
+2018-02-01 16:46:33.555  INFO 8988 --- [main] c.y.s.SpringbootswaggerApplication       : No active profile set, falling back to default profiles: default
+2018-02-01 16:46:33.596  INFO 8988 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7fa98a66: startup date [Thu Feb 01 16:46:33 CST 2018]; root of context hierarchy
+2018-02-01 16:46:34.460  INFO 8988 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-02-01 16:46:34.678  INFO 8988 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9f03a6c4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 16:46:34.939  INFO 8988 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8089 (http)
+2018-02-01 16:46:34.947  INFO 8988 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-02-01 16:46:34.948  INFO 8988 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-02-01 16:46:35.031  INFO 8988 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-02-01 16:46:35.031  INFO 8988 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1444 ms
+2018-02-01 16:46:35.164  INFO 8988 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-01 16:46:35.167  INFO 8988 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-01 16:46:35.168  INFO 8988 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-01 16:46:35.168  INFO 8988 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-01 16:46:35.168  INFO 8988 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-01 16:46:35.716  INFO 8988 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/addUser],methods=[POST]}" onto public java.lang.Object com.yy.springbootswagger.controller.UserController.addUser(javax.servlet.http.HttpServletResponse,com.yy.springbootswagger.entity.Users)
+2018-02-01 16:46:35.716  INFO 8988 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/getUser],methods=[POST]}" onto public java.lang.Object com.yy.springbootswagger.controller.UserController.getUser(javax.servlet.http.HttpServletResponse,com.yy.springbootswagger.request.UserModel)
+2018-02-01 16:46:35.717  INFO 8988 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/getUserByAge],methods=[POST]}" onto public java.lang.Object com.yy.springbootswagger.controller.UserController.getUserByAge(javax.servlet.http.HttpServletResponse,com.yy.springbootswagger.request.UserAgeModel)
+2018-02-01 16:46:35.717  INFO 8988 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/checkLoginUser],methods=[POST]}" onto public java.lang.Object com.yy.springbootswagger.controller.UserController.checkLoginUser(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,com.yy.springbootswagger.request.LoginModel)
+2018-02-01 16:46:35.717  INFO 8988 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginUser],methods=[POST]}" onto public java.lang.Object com.yy.springbootswagger.controller.UserController.loginUser(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,com.yy.springbootswagger.request.LoginModel)
+2018-02-01 16:46:35.717  INFO 8988 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/changeUser],methods=[POST]}" onto public java.lang.Object com.yy.springbootswagger.controller.UserController.cahngeUser(javax.servlet.http.HttpServletResponse,com.yy.springbootswagger.entity.Users)
+2018-02-01 16:46:35.718  INFO 8988 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-02-01 16:46:35.721  INFO 8988 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-02-01 16:46:35.722  INFO 8988 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-02-01 16:46:35.722  INFO 8988 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-02-01 16:46:35.724  INFO 8988 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-01 16:46:35.725  INFO 8988 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-01 16:46:35.962  INFO 8988 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7fa98a66: startup date [Thu Feb 01 16:46:33 CST 2018]; root of context hierarchy
+2018-02-01 16:46:36.000  INFO 8988 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-01 16:46:36.000  INFO 8988 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-01 16:46:36.027  INFO 8988 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-01 16:46:36.288  INFO 8988 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-02-01 16:46:36.293  INFO 8988 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-02-01 16:46:36.294  INFO 8988 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-02-01 16:46:36.304  INFO 8988 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2018-02-01 16:46:36.313  INFO 8988 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-02-01 16:46:36.518  INFO 8988 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8089 (http)
+2018-02-01 16:46:36.521  INFO 8988 --- [main] c.y.s.SpringbootswaggerApplication       : Started SpringbootswaggerApplication in 3.185 seconds (JVM running for 3.786)
+2018-02-01 16:46:47.939  INFO 8988 --- [http-nio-8089-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-02-01 16:46:47.939  INFO 8988 --- [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-02-01 16:46:47.956  INFO 8988 --- [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2018-02-01 16:56:08.847  INFO 8272 --- [main] c.y.s.SpringbootswaggerApplication       : Starting SpringbootswaggerApplication on QAWCIWYU25J6B9J with PID 8272 (F:\springbootswagger\target\classes started by Administrator in F:\springbootswagger)
+2018-02-01 16:56:08.849  INFO 8272 --- [main] c.y.s.SpringbootswaggerApplication       : No active profile set, falling back to default profiles: default
+2018-02-01 16:56:08.885  INFO 8272 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5fdcaa40: startup date [Thu Feb 01 16:56:08 CST 2018]; root of context hierarchy
+2018-02-01 16:56:09.688  INFO 8272 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-02-01 16:56:09.901  INFO 8272 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$12a864cc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 16:56:10.159  INFO 8272 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8089 (http)
+2018-02-01 16:56:10.165  INFO 8272 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-02-01 16:56:10.166  INFO 8272 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-02-01 16:56:10.242  INFO 8272 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-02-01 16:56:10.242  INFO 8272 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1360 ms
+2018-02-01 16:56:10.364  INFO 8272 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-01 16:56:10.368  INFO 8272 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-01 16:56:10.368  INFO 8272 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-01 16:56:10.369  INFO 8272 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-01 16:56:10.369  INFO 8272 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-01 16:56:10.898  INFO 8272 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/addUser],methods=[POST]}" onto public java.lang.Object com.yy.springbootswagger.controller.UserController.addUser(javax.servlet.http.HttpServletResponse,com.yy.springbootswagger.entity.Users)
+2018-02-01 16:56:10.899  INFO 8272 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginUser],methods=[POST]}" onto public java.lang.Object com.yy.springbootswagger.controller.UserController.loginUser(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,com.yy.springbootswagger.request.LoginModel)
+2018-02-01 16:56:10.899  INFO 8272 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/checkLoginUser],methods=[POST]}" onto public java.lang.Object com.yy.springbootswagger.controller.UserController.checkLoginUser(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,com.yy.springbootswagger.request.LoginModel)
+2018-02-01 16:56:10.899  INFO 8272 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/getUser],methods=[POST]}" onto public java.lang.Object com.yy.springbootswagger.controller.UserController.getUser(javax.servlet.http.HttpServletResponse,com.yy.springbootswagger.request.UserModel)
+2018-02-01 16:56:10.899  INFO 8272 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/getUserByAge],methods=[POST]}" onto public java.lang.Object com.yy.springbootswagger.controller.UserController.getUserByAge(javax.servlet.http.HttpServletResponse,com.yy.springbootswagger.request.UserAgeModel)
+2018-02-01 16:56:10.900  INFO 8272 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/changeUser],methods=[POST]}" onto public java.lang.Object com.yy.springbootswagger.controller.UserController.cahngeUser(javax.servlet.http.HttpServletResponse,com.yy.springbootswagger.entity.Users)
+2018-02-01 16:56:10.900  INFO 8272 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-02-01 16:56:10.903  INFO 8272 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-02-01 16:56:10.903  INFO 8272 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-02-01 16:56:10.904  INFO 8272 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-02-01 16:56:10.906  INFO 8272 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-01 16:56:10.906  INFO 8272 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-01 16:56:11.126  INFO 8272 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5fdcaa40: startup date [Thu Feb 01 16:56:08 CST 2018]; root of context hierarchy
+2018-02-01 16:56:11.164  INFO 8272 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-01 16:56:11.164  INFO 8272 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-01 16:56:11.192  INFO 8272 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-01 16:56:11.459  INFO 8272 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-02-01 16:56:11.466  INFO 8272 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-02-01 16:56:11.466  INFO 8272 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-02-01 16:56:11.477  INFO 8272 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2018-02-01 16:56:11.486  INFO 8272 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-02-01 16:56:11.694  INFO 8272 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8089 (http)
+2018-02-01 16:56:11.698  INFO 8272 --- [main] c.y.s.SpringbootswaggerApplication       : Started SpringbootswaggerApplication in 3.076 seconds (JVM running for 3.564)
+2018-02-01 16:56:26.859  INFO 8272 --- [http-nio-8089-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-02-01 16:56:26.859  INFO 8272 --- [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-02-01 16:56:26.876  INFO 8272 --- [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2018-02-01 16:57:17.059  INFO 6492 --- [main] c.y.s.SpringbootswaggerApplication       : Starting SpringbootswaggerApplication on QAWCIWYU25J6B9J with PID 6492 (F:\springbootswagger\target\classes started by Administrator in F:\springbootswagger)
+2018-02-01 16:57:17.109  INFO 6492 --- [main] c.y.s.SpringbootswaggerApplication       : No active profile set, falling back to default profiles: default
+2018-02-01 16:57:17.200  INFO 6492 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@15ff3e9e: startup date [Thu Feb 01 16:57:17 CST 2018]; root of context hierarchy
+2018-02-01 16:57:17.867  INFO 6492 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-02-01 16:57:18.093  INFO 6492 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$efc69acd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 16:57:18.344  INFO 6492 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8089 (http)
+2018-02-01 16:57:18.351  INFO 6492 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-02-01 16:57:18.352  INFO 6492 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-02-01 16:57:18.432  INFO 6492 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-02-01 16:57:18.432  INFO 6492 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1236 ms
+2018-02-01 16:57:18.566  INFO 6492 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-01 16:57:18.569  INFO 6492 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-01 16:57:18.570  INFO 6492 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-01 16:57:18.570  INFO 6492 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-01 16:57:18.570  INFO 6492 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-01 16:57:19.110  INFO 6492 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginUser],methods=[POST]}" onto public java.lang.Object com.yy.springbootswagger.controller.UserController.loginUser(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,com.yy.springbootswagger.request.LoginModel)
+2018-02-01 16:57:19.111  INFO 6492 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/checkLoginUser],methods=[POST]}" onto public java.lang.Object com.yy.springbootswagger.controller.UserController.checkLoginUser(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,com.yy.springbootswagger.request.LoginModel)
+2018-02-01 16:57:19.111  INFO 6492 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/getUser],methods=[POST]}" onto public java.lang.Object com.yy.springbootswagger.controller.UserController.getUser(javax.servlet.http.HttpServletResponse,com.yy.springbootswagger.request.UserModel)
+2018-02-01 16:57:19.111  INFO 6492 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/getUserByAge],methods=[POST]}" onto public java.lang.Object com.yy.springbootswagger.controller.UserController.getUserByAge(javax.servlet.http.HttpServletResponse,com.yy.springbootswagger.request.UserAgeModel)
+2018-02-01 16:57:19.111  INFO 6492 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/changeUser],methods=[POST]}" onto public java.lang.Object com.yy.springbootswagger.controller.UserController.cahngeUser(javax.servlet.http.HttpServletResponse,com.yy.springbootswagger.entity.Users)
+2018-02-01 16:57:19.112  INFO 6492 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/addUser],methods=[POST]}" onto public java.lang.Object com.yy.springbootswagger.controller.UserController.addUser(javax.servlet.http.HttpServletResponse,com.yy.springbootswagger.entity.Users)
+2018-02-01 16:57:19.112  INFO 6492 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-02-01 16:57:19.115  INFO 6492 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-02-01 16:57:19.115  INFO 6492 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-02-01 16:57:19.116  INFO 6492 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-02-01 16:57:19.118  INFO 6492 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-01 16:57:19.119  INFO 6492 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-01 16:57:19.333  INFO 6492 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@15ff3e9e: startup date [Thu Feb 01 16:57:17 CST 2018]; root of context hierarchy
+2018-02-01 16:57:19.369  INFO 6492 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-01 16:57:19.369  INFO 6492 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-01 16:57:19.397  INFO 6492 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-01 16:57:19.653  INFO 6492 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-02-01 16:57:19.659  INFO 6492 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-02-01 16:57:19.659  INFO 6492 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-02-01 16:57:19.669  INFO 6492 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2018-02-01 16:57:19.677  INFO 6492 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-02-01 16:57:19.875  INFO 6492 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8089 (http)
+2018-02-01 16:57:19.879  INFO 6492 --- [main] c.y.s.SpringbootswaggerApplication       : Started SpringbootswaggerApplication in 3.054 seconds (JVM running for 3.508)
+2018-02-01 16:57:27.379  INFO 6492 --- [http-nio-8089-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-02-01 16:57:27.379  INFO 6492 --- [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-02-01 16:57:27.399  INFO 6492 --- [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+2018-02-01 17:05:26.946  INFO 8648 --- [main] c.y.s.SpringbootswaggerApplication       : Starting SpringbootswaggerApplication on QAWCIWYU25J6B9J with PID 8648 (F:\springbootswagger\target\classes started by Administrator in F:\springbootswagger)
+2018-02-01 17:05:26.948  INFO 8648 --- [main] c.y.s.SpringbootswaggerApplication       : No active profile set, falling back to default profiles: default
+2018-02-01 17:05:27.026  INFO 8648 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7fa98a66: startup date [Thu Feb 01 17:05:27 CST 2018]; root of context hierarchy
+2018-02-01 17:05:27.694  INFO 8648 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-02-01 17:05:27.917  INFO 8648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9f03a6c4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 17:05:28.171  INFO 8648 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8089 (http)
+2018-02-01 17:05:28.178  INFO 8648 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-02-01 17:05:28.179  INFO 8648 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-02-01 17:05:28.254  INFO 8648 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-02-01 17:05:28.254  INFO 8648 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1230 ms
+2018-02-01 17:05:28.378  INFO 8648 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-01 17:05:28.381  INFO 8648 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-01 17:05:28.382  INFO 8648 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-01 17:05:28.382  INFO 8648 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-01 17:05:28.382  INFO 8648 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-01 17:05:28.914  INFO 8648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/addUser],methods=[POST]}" onto public java.lang.Object com.yy.springbootswagger.controller.UserController.addUser(javax.servlet.http.HttpServletResponse,com.yy.springbootswagger.entity.Users)
+2018-02-01 17:05:28.915  INFO 8648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/getUser],methods=[POST]}" onto public java.lang.Object com.yy.springbootswagger.controller.UserController.getUser(javax.servlet.http.HttpServletResponse,com.yy.springbootswagger.request.UserModel)
+2018-02-01 17:05:28.915  INFO 8648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/getUserByAge],methods=[POST]}" onto public java.lang.Object com.yy.springbootswagger.controller.UserController.getUserByAge(javax.servlet.http.HttpServletResponse,com.yy.springbootswagger.request.UserAgeModel)
+2018-02-01 17:05:28.915  INFO 8648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/checkLoginUser],methods=[POST]}" onto public java.lang.Object com.yy.springbootswagger.controller.UserController.checkLoginUser(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,com.yy.springbootswagger.request.LoginModel)
+2018-02-01 17:05:28.915  INFO 8648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginUser],methods=[POST]}" onto public java.lang.Object com.yy.springbootswagger.controller.UserController.loginUser(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,com.yy.springbootswagger.request.LoginModel)
+2018-02-01 17:05:28.916  INFO 8648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/changeUser],methods=[POST]}" onto public java.lang.Object com.yy.springbootswagger.controller.UserController.cahngeUser(javax.servlet.http.HttpServletResponse,com.yy.springbootswagger.entity.Users)
+2018-02-01 17:05:28.916  INFO 8648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-02-01 17:05:28.919  INFO 8648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-02-01 17:05:28.919  INFO 8648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-02-01 17:05:28.920  INFO 8648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-02-01 17:05:28.922  INFO 8648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-01 17:05:28.922  INFO 8648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-01 17:05:29.151  INFO 8648 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7fa98a66: startup date [Thu Feb 01 17:05:27 CST 2018]; root of context hierarchy
+2018-02-01 17:05:29.187  INFO 8648 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-01 17:05:29.187  INFO 8648 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-01 17:05:29.215  INFO 8648 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-01 17:05:29.464  INFO 8648 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-02-01 17:05:29.470  INFO 8648 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-02-01 17:05:29.470  INFO 8648 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-02-01 17:05:29.481  INFO 8648 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2018-02-01 17:05:29.491  INFO 8648 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-02-01 17:05:29.687  INFO 8648 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8089 (http)
+2018-02-01 17:05:29.691  INFO 8648 --- [main] c.y.s.SpringbootswaggerApplication       : Started SpringbootswaggerApplication in 3.041 seconds (JVM running for 3.598)
+2018-02-01 17:05:36.530  INFO 8648 --- [http-nio-8089-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-02-01 17:05:36.530  INFO 8648 --- [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-02-01 17:05:36.549  INFO 8648 --- [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+2018-02-01 17:08:08.766  INFO 6460 --- [main] c.y.s.SpringbootswaggerApplication       : Starting SpringbootswaggerApplication on QAWCIWYU25J6B9J with PID 6460 (F:\springbootswagger\target\classes started by Administrator in F:\springbootswagger)
+2018-02-01 17:08:08.768  INFO 6460 --- [main] c.y.s.SpringbootswaggerApplication       : No active profile set, falling back to default profiles: default
+2018-02-01 17:08:08.845  INFO 6460 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7fa98a66: startup date [Thu Feb 01 17:08:08 CST 2018]; root of context hierarchy
+2018-02-01 17:08:09.513  INFO 6460 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-02-01 17:08:09.730  INFO 6460 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9f03a6c4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 17:08:09.983  INFO 6460 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8089 (http)
+2018-02-01 17:08:09.990  INFO 6460 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-02-01 17:08:09.991  INFO 6460 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-02-01 17:08:10.067  INFO 6460 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-02-01 17:08:10.067  INFO 6460 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1225 ms
+2018-02-01 17:08:10.195  INFO 6460 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-01 17:08:10.198  INFO 6460 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-01 17:08:10.199  INFO 6460 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-01 17:08:10.199  INFO 6460 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-01 17:08:10.199  INFO 6460 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-01 17:08:10.724  INFO 6460 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/checkLoginUser],methods=[POST]}" onto public java.lang.Object com.yy.springbootswagger.controller.UserController.checkLoginUser(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,com.yy.springbootswagger.request.LoginModel)
+2018-02-01 17:08:10.725  INFO 6460 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/changeUser],methods=[POST]}" onto public java.lang.Object com.yy.springbootswagger.controller.UserController.cahngeUser(javax.servlet.http.HttpServletResponse,com.yy.springbootswagger.entity.Users)
+2018-02-01 17:08:10.725  INFO 6460 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginUser],methods=[POST]}" onto public java.lang.Object com.yy.springbootswagger.controller.UserController.loginUser(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,com.yy.springbootswagger.request.LoginModel)
+2018-02-01 17:08:10.726  INFO 6460 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/getUserByAge],methods=[POST]}" onto public java.lang.Object com.yy.springbootswagger.controller.UserController.getUserByAge(javax.servlet.http.HttpServletResponse,com.yy.springbootswagger.request.UserAgeModel)
+2018-02-01 17:08:10.726  INFO 6460 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/getUser],methods=[POST]}" onto public java.lang.Object com.yy.springbootswagger.controller.UserController.getUser(javax.servlet.http.HttpServletResponse,com.yy.springbootswagger.request.UserModel)
+2018-02-01 17:08:10.726  INFO 6460 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/addUser],methods=[POST]}" onto public java.lang.Object com.yy.springbootswagger.controller.UserController.addUser(javax.servlet.http.HttpServletResponse,com.yy.springbootswagger.entity.Users)
+2018-02-01 17:08:10.727  INFO 6460 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-02-01 17:08:10.729  INFO 6460 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-02-01 17:08:10.730  INFO 6460 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-02-01 17:08:10.731  INFO 6460 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-02-01 17:08:10.733  INFO 6460 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-01 17:08:10.733  INFO 6460 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-01 17:08:10.954  INFO 6460 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7fa98a66: startup date [Thu Feb 01 17:08:08 CST 2018]; root of context hierarchy
+2018-02-01 17:08:10.991  INFO 6460 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-01 17:08:10.991  INFO 6460 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-01 17:08:11.017  INFO 6460 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-01 17:08:11.290  INFO 6460 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-02-01 17:08:11.296  INFO 6460 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-02-01 17:08:11.296  INFO 6460 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-02-01 17:08:11.306  INFO 6460 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2018-02-01 17:08:11.314  INFO 6460 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-02-01 17:08:11.514  INFO 6460 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8089 (http)
+2018-02-01 17:08:11.518  INFO 6460 --- [main] c.y.s.SpringbootswaggerApplication       : Started SpringbootswaggerApplication in 2.986 seconds (JVM running for 3.446)
+2018-02-01 17:08:24.021  INFO 6460 --- [http-nio-8089-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-02-01 17:08:24.022  INFO 6460 --- [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-02-01 17:08:24.046  INFO 6460 --- [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
