@@ -11,6 +11,7 @@
         id, username, age, date
     </sql>
 
+    <!--根据id查询-->
     <select id="selectById" parameterType="com.yy.springbootswagger.request.UserModel" resultType="com.yy.springbootswagger.entity.Users">
         select <include refid="Base_Column_List"/>
         FROM  user
@@ -21,12 +22,55 @@
         </where>
     </select>
 
+    <!--根据年龄查询-->
     <select id="selectByAge" parameterType="com.yy.springbootswagger.request.UserAgeModel" resultType="com.yy.springbootswagger.entity.Users">
         select <include refid="Base_Column_List"/>
         FROM  user
         <where>
             <if test="age != null">
                 age = #{age}
+            </if>
+        </where>
+    </select>
+
+    <!--新增用户-->
+    <insert id="insertUser" parameterType="com.yy.springbootswagger.entity.Users">
+        insert into user
+        (id,username,age,succdate,date) VALUES
+        (#{id},#{username},#{age},#{succdate},#{date})
+    </insert>
+
+    <!--更新用户-->
+    <update id="updateUser" parameterType="com.yy.springbootswagger.entity.Users">
+        update user
+        <set>
+            <if test="username != null and username != ''">
+                username = #{username}
+            </if>
+            <if test="age != null">
+                age = #{age}
+            </if>
+            <if test="succdate != null">
+                succdate = #{succdate}
+            </if>
+            <if test="date != null">
+                date = #{date}
+            </if>
+        </set>
+        <where>
+            <if test="id != null">
+                id = #{id}
+            </if>
+        </where>
+    </update>
+
+    <!--根据用户名查询-->
+    <select id="selectByUsername" parameterType="com.yy.springbootswagger.request.LoginModel" resultType="com.yy.springbootswagger.entity.Users">
+        SELECT <include refid="Base_Column_List"/>
+        FROM  USER
+        <where>
+            <if test="username != null and username != ''">
+                username = #{username}
             </if>
         </where>
     </select>

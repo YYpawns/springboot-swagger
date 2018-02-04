@@ -14,6 +14,15 @@ public class Users {
     private String username;
     private Integer age;
     private Date date;
+    private Date succdate;
+
+    public Date getSuccdate() {
+        return succdate;
+    }
+
+    public void setSuccdate(Date succdate) {
+        this.succdate = succdate;
+    }
 
     public Integer getId() {
         return id;

@@ -2,6 +2,7 @@ package com.yy.springbootswagger.service.impl;
 
 import com.yy.springbootswagger.dao.UserDao;
 import com.yy.springbootswagger.entity.Users;
+import com.yy.springbootswagger.request.LoginModel;
 import com.yy.springbootswagger.request.UserAgeModel;
 import com.yy.springbootswagger.request.UserModel;
 import com.yy.springbootswagger.service.UserService;
@@ -30,5 +31,20 @@ public class UserServiceImpl  implements UserService {
     @Override
     public List<Users> selectByAge(UserAgeModel user) {
         return userDao.selectByAge(user);
+    }
+
+    @Override
+    public int insertUser(Users user) {
+        return userDao.insertUser(user);
+    }
+
+    @Override
+    public int updateUser(Users user) {
+        return userDao.updateUser(user);
+    }
+
+    @Override
+    public Users selectByUsername(LoginModel user) {
+        return userDao.selectByUsername(user);
     }
 }
