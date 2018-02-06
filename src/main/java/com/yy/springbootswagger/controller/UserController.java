@@ -183,4 +183,18 @@ public class UserController {
         }
     }
 
+    @ApiOperation(value = "清除session")
+    @ResponseBody
+    @RequestMapping(value = "/removeSession", method = RequestMethod.POST)
+    public Object removeSession(HttpServletRequest request, HttpServletResponse response) {
+        response.setHeader("Access-Control-Allow-Origin", "*");
+        try {
+            request.getSession().invalidate();
+            return ErrosMessage.remove_session_success;
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw new MyException(ErrosMessage.remove_session_fail);
+        }
+    }
+
 }

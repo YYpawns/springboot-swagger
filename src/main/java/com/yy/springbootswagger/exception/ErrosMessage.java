@@ -19,4 +19,6 @@ public class ErrosMessage {
     public static String username_or_password_error = "用户名或密码错误";
     public static String change_password_fial = "修改登录密码失败";
     public static String change_password_success = "修改登录密码成功";
+    public static String remove_session_success = "清除session成功";
+    public static String remove_session_fail = "清除session失败";
 }
