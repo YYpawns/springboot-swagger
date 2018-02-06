@@ -1,9 +1,9 @@
 package com.yy.springbootswagger.dao;
 
 import com.yy.springbootswagger.entity.Users;
-import com.yy.springbootswagger.request.LoginModel;
 import com.yy.springbootswagger.request.UserAgeModel;
-import com.yy.springbootswagger.request.UserModel;
+import com.yy.springbootswagger.request.UserModels;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -20,7 +20,7 @@ public interface UserDao {
       * @author: yy
       * @date 2018/2/1 0001 16:51
      */
-    Users selectById(UserModel user);
+    Users selectByPrarmyKey(@Param("id") Integer id);
 
     /**
       * @Description: 根据年龄查询
@@ -44,7 +44,7 @@ public interface UserDao {
       * @author: yy
       * @date 2018/2/1 0001 16:51
      */
-    int updateUser(Users user);
+    int updateUser(UserModels user);
 
     /**
       * @Description: 根据用户名查询
@@ -52,5 +52,7 @@ public interface UserDao {
       * @author: yy
       * @date 2018/2/1 0001 16:51
      */
-    Users selectByUsername(LoginModel user);
+    List<Users> selectByUsername(@Param("username") String username);
+
+    int changePassword(@Param("username") String username,@Param("password") String password);
 }

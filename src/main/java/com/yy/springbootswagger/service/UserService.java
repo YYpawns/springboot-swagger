@@ -1,9 +1,8 @@
 package com.yy.springbootswagger.service;
 
 import com.yy.springbootswagger.entity.Users;
-import com.yy.springbootswagger.request.LoginModel;
 import com.yy.springbootswagger.request.UserAgeModel;
-import com.yy.springbootswagger.request.UserModel;
+import com.yy.springbootswagger.request.UserModels;
 
 import java.util.List;
 
@@ -20,7 +19,7 @@ public interface UserService {
       * @author: yy
       * @date 2018/2/1 0001 16:50
      */
-    Users selectById(UserModel user);
+    Users selectByPrarmyKey(Integer id);
 
     /**
       * @Description: 根据年龄查询
@@ -44,7 +43,7 @@ public interface UserService {
       * @author: yy
       * @date 2018/2/1 0001 16:49
      */
-    int updateUser(Users user);
+    int updateUser(UserModels user);
 
     /**
       * @Description: 用户名查询
@@ -52,5 +51,7 @@ public interface UserService {
       * @author: yy
       * @date 2018/2/1 0001 16:49
      */
-    Users selectByUsername(LoginModel user);
+    Users selectByUsername(String username);
+
+    int changePassword(String username,String password);
 }

@@ -1,20 +1,29 @@
-package com.yy.springbootswagger.entity;
+package com.yy.springbootswagger.request;
+
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 
 import java.util.Date;
 
 /**
- * @package: com.yy.springbootswagger.entity
- * @Description: user实体类
- * @Date: Created in  2018-01-30 18:51
+ * @package: com.yy.springbootswagger.request
+ * @Description:
+ * @Date: Created in  2018-02-06 15:12
  * @Author: yy
  */
-public class Users {
-
+@ApiModel("更新用户")
+public class UserModels {
+    @ApiModelProperty(value = "id",required = true)
     private Integer id;
+    @ApiModelProperty(value = "username",required = false)
     private String username;
+    @ApiModelProperty(value = "age",required = false)
     private Integer age;
+    @ApiModelProperty(value = "date",required = false)
     private Date date;
+    @ApiModelProperty(value = "succdate",required = false)
     private Date succdate;
+    @ApiModelProperty(value = "password",required = false)
     private String password;
 
     public String getPassword() {

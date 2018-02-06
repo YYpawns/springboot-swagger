@@ -2,13 +2,14 @@ package com.yy.springbootswagger.service.impl;
 
 import com.yy.springbootswagger.dao.UserDao;
 import com.yy.springbootswagger.entity.Users;
-import com.yy.springbootswagger.request.LoginModel;
 import com.yy.springbootswagger.request.UserAgeModel;
-import com.yy.springbootswagger.request.UserModel;
+import com.yy.springbootswagger.request.UserModels;
 import com.yy.springbootswagger.service.UserService;
+import com.yy.springbootswagger.util.MD5Util;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -24,8 +25,8 @@ public class UserServiceImpl  implements UserService {
     private UserDao userDao;
 
     @Override
-    public Users selectById(UserModel user) {
-        return userDao.selectById(user);
+    public Users selectByPrarmyKey(Integer id) {
+        return userDao.selectByPrarmyKey(id);
     }
 
     @Override
@@ -35,16 +36,33 @@ public class UserServiceImpl  implements UserService {
 
     @Override
     public int insertUser(Users user) {
+        if(user.getDate() == null){
+            user.setDate(new Date());
+        }
+        if(user.getSuccdate() == null){
+            user.setSuccdate(new Date());
+        }
+        user.setPassword(MD5Util.md5(user.getPassword()));
         return userDao.insertUser(user);
     }
 
     @Override
-    public int updateUser(Users user) {
+    public int updateUser(UserModels user) {
+        user.setPassword(MD5Util.md5(user.getPassword()));
         return userDao.updateUser(user);
     }
 
     @Override
-    public Users selectByUsername(LoginModel user) {
-        return userDao.selectByUsername(user);
+    public Users selectByUsername(String username) {
+        List<Users> list = userDao.selectByUsername(username);
+        if(list == null || list.size() <= 0){
+            return null;
+        }
+        return list.get(0);
+    }
+
+    @Override
+    public int changePassword(String username,String password) {
+        return userDao.changePassword(username,password);
     }
 }

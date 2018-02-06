@@ -6,14 +6,14 @@ import io.swagger.annotations.ApiModelProperty;
 /**
  * @package: com.yy.springbootswagger.request
  * @Description:
- * @Date: Created in  2018-02-01 15:52
+ * @Date: Created in  2018-02-06 14:07
  * @Author: yy
  */
-@ApiModel(value = "登录")
-public class LoginModel {
-    @ApiModelProperty(value = "用户名",required = true)
+@ApiModel("用户名")
+public class UsernameModel {
+    @ApiModelProperty(value = "用户名", required = true)
     private String username;
-    @ApiModelProperty(value = "密码",required = true)
+    @ApiModelProperty(value = "密码", required = true)
     private String password;
 
     public String getPassword() {

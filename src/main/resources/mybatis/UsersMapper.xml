@@ -6,13 +6,14 @@
         <result column="username" property="username" jdbcType="VARCHAR"/>
         <result column="age" property="age" jdbcType="INTEGER"/>
         <result column="date" property="date" jdbcType="TIMESTAMP"/>
+        <result column="password" property="password" jdbcType="VARCHAR"/>
     </resultMap>
     <sql id="Base_Column_List" >
-        id, username, age, date
+        id, username, age, date, password
     </sql>
 
     <!--根据id查询-->
-    <select id="selectById" parameterType="com.yy.springbootswagger.request.UserModel" resultType="com.yy.springbootswagger.entity.Users">
+    <select id="selectByPrarmyKey" resultType="com.yy.springbootswagger.entity.Users">
         select <include refid="Base_Column_List"/>
         FROM  user
         <where>
@@ -36,25 +37,28 @@
     <!--新增用户-->
     <insert id="insertUser" parameterType="com.yy.springbootswagger.entity.Users">
         insert into user
-        (id,username,age,succdate,date) VALUES
-        (#{id},#{username},#{age},#{succdate},#{date})
+        (id,username,age,succdate,date,password) VALUES
+        (#{id},#{username},#{age},#{succdate},#{date},#{password})
     </insert>
 
     <!--更新用户-->
-    <update id="updateUser" parameterType="com.yy.springbootswagger.entity.Users">
+    <update id="updateUser" parameterType="com.yy.springbootswagger.request.UserModels">
         update user
         <set>
             <if test="username != null and username != ''">
-                username = #{username}
+                username = #{username},
             </if>
             <if test="age != null">
-                age = #{age}
+                age = #{age},
             </if>
             <if test="succdate != null">
-                succdate = #{succdate}
+                succdate = #{succdate},
             </if>
             <if test="date != null">
-                date = #{date}
+                date = #{date},
+            </if>
+            <if test="password != null">
+                password = #{password}
             </if>
         </set>
         <where>
@@ -65,7 +69,7 @@
     </update>
 
     <!--根据用户名查询-->
-    <select id="selectByUsername" parameterType="com.yy.springbootswagger.request.LoginModel" resultType="com.yy.springbootswagger.entity.Users">
+    <select id="selectByUsername"  resultType="com.yy.springbootswagger.entity.Users">
         SELECT <include refid="Base_Column_List"/>
         FROM  USER
         <where>
@@ -74,4 +78,18 @@
             </if>
         </where>
     </select>
+
+    <update id="changePassword" >
+        update USER
+        <set>
+            <if test="password != null">
+                password = #{password}
+            </if>
+        </set>
+        <where>
+            <if test="username != null">
+                username = #{username}
+            </if>
+        </where>
+    </update>
 </mapper>
